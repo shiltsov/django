@@ -11,9 +11,5 @@ def about(request):
     return render(request, 'core/about.html', {})
 
 
-def portfolio(request):
-    return render(request, 'core/portfolio.html', {})
-
-
 def contacts(request):
     return render(request, 'core/contacts.html', {})
