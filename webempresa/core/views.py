@@ -4,28 +4,28 @@ from django.shortcuts import render, HttpResponse
 
 
 def home(request):
-    return HttpResponse('<h1>home</h1>')
+    return render(request, 'core/home.html', {})
 
 
 def about(request):
-    return HttpResponse('about')
+    return render(request, 'core/about.html', {})
 
 
 def services(request):
-    return HttpResponse('services')
+    return render(request, 'core/services.html', {})
 
 
 def store(request):
-    return HttpResponse('store')
+    return render(request, 'core/store.html', {})
 
 
 def contact(request):
-    return HttpResponse('contact')
+    return render(request, 'core/contact.html', {})
 
 
 def blog(request):
-    return HttpResponse('blog')
+    return render(request, 'core/blog.html', {})
 
 
 def sample(request):
-    return HttpResponse('sample')
+    return render(request, 'core/sample.html', {})
